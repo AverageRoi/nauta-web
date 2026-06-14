@@ -1,24 +1,24 @@
 {
-  "name": "nordlys",
+  "name": "nauta-web",
   "type": "module",
-  "version": "3.9.0",
-  "description": "A minimal Astro blog theme",
-  "author": "FjellOverflow",
+  "version": "1.0.0",
+  "description": "Website for the Nauta Discord bot",
+  "author": "Average & Pipo",
   "license": "GPL-3.0-only",
-  "homepage": "https://github.com/FjellOverflow/nordlys",
+  "homepage": "https://nautabot.netlify.app/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/FjellOverflow/nordlys.git"
+    "url": "https://github.com/AverageRoi"
   },
   "bugs": {
-    "url": "https://github.com/FjellOverflow/nordlys/issues"
+    "url": "https://github.com/AverageRoi"
   },
   "keywords": [
     "astro",
-    "blog",
-    "template",
-    "theme",
-    "tailwindcss"
+    "discord",
+    "minecraft",
+    "bot",
+    "nauta"
   ],
   "scripts": {
     "dev": "astro dev",

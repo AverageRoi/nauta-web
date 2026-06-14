@@ -26,18 +26,10 @@ test.describe('interaction - /search', () => {
     await expect(clearButton).not.toBeVisible()
   })
 
-  test('searching for posts', async () => {
-    await searchInput.fill('Syntax Highlighting')
+  test('searching for command docs', async () => {
+    await searchInput.fill('near-me')
 
-    await expect(
-      resultsList.locator('a[href*="syntax-highlighting"]')
-    ).toBeVisible()
-  })
-
-  test('searching for projects', async () => {
-    await searchInput.fill('Nordly Astro blog theme')
-
-    await expect(resultsList.locator('a[href*="nordlys"]')).toBeVisible()
+    await expect(resultsList.locator('a[href*="near-me"]')).toBeVisible()
   })
 
   test('searching for non-existent item', async () => {

@@ -63,7 +63,7 @@ Nauta does not guarantee that saved coordinates are accurate, current, complete,
 
 ## 6. Privacy and Data
 
-Nauta's [Privacy Policy](/privacy_policy/) explains what data we collect, why we collect it, how it is used, and how deletion works. By using Nauta, you also agree to our Privacy Policy.
+Nauta's [Privacy Policy](/privacy-policy/) explains what data we collect, why we collect it, how it is used, and how deletion works. By using Nauta, you also agree to our Privacy Policy.
 
 We use data only as needed to provide and maintain Nauta, protect the service, troubleshoot issues, and comply with applicable obligations. We do not sell Discord API data.
 

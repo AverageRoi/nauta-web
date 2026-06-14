@@ -1,0 +1,99 @@
+---
+import { commands, type CommandDoc } from '@/data/commands'
+import PageLayout from '@/layouts/PageLayout.astro'
+
+export function getStaticPaths() {
+  return commands.map((command, index) => ({
+    params: { command: command.slug },
+    props: {
+      command,
+      previous: commands[index - 1],
+      next: commands[index + 1]
+    }
+  }))
+}
+
+interface Props {
+  command: CommandDoc
+  previous?: CommandDoc
+  next?: CommandDoc
+}
+
+const { command, previous, next } = Astro.props
+
+const frontmatter = {
+  title: command.title,
+  description: command.summary,
+  activeHeaderLink: 'Features'
+}
+---
+
+<PageLayout {frontmatter}>
+  <div class="not-prose mb-8">
+    <a href="/features/" class="clickable flex w-fit items-center gap-1">
+      <span class="iconify tabler--arrow-left" />
+      Back to all features
+    </a>
+  </div>
+
+  <section class="not-prose mb-8">
+    <p class="text-accent mb-2 text-sm font-semibold uppercase">
+      Command Docs
+    </p>
+    <div class="flex items-center gap-3">
+      <span class={`iconify ${command.icon} text-accent text-4xl`} />
+      <h1 class="m-0 text-4xl font-semibold">{command.label}</h1>
+    </div>
+    <p class="mt-4 text-lg opacity-80">{command.summary}</p>
+  </section>
+
+  <section>
+    <h2>Syntax</h2>
+    <pre><code>{command.syntax}</code></pre>
+
+    <h2>Permissions</h2>
+    <p>{command.permissions}</p>
+
+    {
+      command.sections.map((section) => (
+        <>
+          <h2>{section.heading}</h2>
+          <p>{section.body}</p>
+        </>
+      ))
+    }
+  </section>
+
+  <nav class="not-prose mt-10 grid gap-3 sm:grid-cols-2">
+    {
+      previous ? (
+        <a
+          href={`/features/${previous.slug}/`}
+          class="border-accent/25 hover:border-accent rounded-md border p-4 no-underline transition"
+        >
+          <span class="mb-1 block text-sm opacity-70">Previous</span>
+          <span class="flex items-center gap-2 font-semibold">
+            <span class="iconify tabler--arrow-left" />
+            {previous.label}
+          </span>
+        </a>
+      ) : (
+        <span />
+      )
+    }
+    {
+      next && (
+        <a
+          href={`/features/${next.slug}/`}
+          class="border-accent/25 hover:border-accent rounded-md border p-4 text-right no-underline transition"
+        >
+          <span class="mb-1 block text-sm opacity-70">Next</span>
+          <span class="flex items-center justify-end gap-2 font-semibold">
+            {next.label}
+            <span class="iconify tabler--arrow-right" />
+          </span>
+        </a>
+      )
+    }
+  </nav>
+</PageLayout>

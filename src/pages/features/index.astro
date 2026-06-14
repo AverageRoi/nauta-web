@@ -1,0 +1,44 @@
+---
+import { commands } from '@/data/commands'
+import PageLayout from '@/layouts/PageLayout.astro'
+
+const frontmatter = {
+  title: 'Features',
+  description: 'Nauta command documentation for Minecraft Discord servers.',
+  activeHeaderLink: 'Features'
+}
+---
+
+<PageLayout {frontmatter}>
+  <section class="not-prose mb-10">
+    <p class="text-accent mb-2 text-sm font-semibold uppercase">
+      Command Docs
+    </p>
+    <h1 class="mb-4 text-4xl font-semibold">Features</h1>
+    <p class="text-lg opacity-80">
+      Nauta helps Minecraft Discord servers save, find, and manage coordinates.
+      Use this page as the command documentation hub and fill in the exact
+      behavior as the bot evolves.
+    </p>
+  </section>
+
+  <section class="not-prose grid gap-4 sm:grid-cols-2">
+    {
+      commands.map((command) => (
+        <a
+          href={`/features/${command.slug}/`}
+          class="border-accent/25 hover:border-accent group rounded-md border p-5 no-underline transition"
+        >
+          <div class="mb-4 flex items-center justify-between gap-4">
+            <span class="flex items-center gap-2 text-lg font-semibold">
+              <span class={`iconify ${command.icon} text-accent text-2xl`} />
+              {command.label}
+            </span>
+            <span class="iconify tabler--arrow-right clickable text-xl transition group-hover:translate-x-1" />
+          </div>
+          <p class="m-0 text-sm opacity-75">{command.summary}</p>
+        </a>
+      ))
+    }
+  </section>
+</PageLayout>

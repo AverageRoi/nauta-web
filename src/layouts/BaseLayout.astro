@@ -74,12 +74,6 @@ const openGraphImageUrl = new URL(resolvedOgImage, Astro.site).href
     <meta name="description" content={description} />
     <meta name="author" content={author} />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <link
-      rel="alternate"
-      type="application/rss+xml"
-      title={title}
-      href={new URL('feed.xml', Astro.site)}
-    />
 
     <meta property="og:title" content={titleWithSuffix} />
     <meta property="og:description" content={description} />

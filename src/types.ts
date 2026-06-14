@@ -3,11 +3,6 @@ import type { SetOptional } from 'type-fest'
 
 export type Icon = `tabler--${string}`
 
-export interface ResolvedTag {
-  tag: string
-  icon: Icon
-}
-
 export interface NavItem {
   label: string
   href: string
@@ -30,11 +25,8 @@ export const ColorSchemes = [
   'scheme-aurora'
 ] as const
 
-export const ViewOptions = ['list', 'grid'] as const
-
 export type Mode = (typeof Modes)[number]
 export type ColorScheme = (typeof ColorSchemes)[number]
-export type ViewOption = (typeof ViewOptions)[number]
 
 export interface ThemeConfig {
   site: string
@@ -49,13 +41,8 @@ export interface ThemeConfig {
   modeToggle: boolean
   colorScheme: ColorScheme
   openGraphImage: ImageMetadata | string | undefined
-  postsPerPage: number
-  postsView: ViewOption
-  projectsPerPage: number
-  projectsView: ViewOption
   scrollProgress: boolean
   scrollToTop: boolean
-  tagIcons: Record<string, Icon>
   expressiveCodeThemes: AstroExpressiveCodeOptions['themes']
 }
 
@@ -65,13 +52,8 @@ const defaults = {
   modeToggle: true,
   colorScheme: ColorSchemes[0],
   openGraphImage: undefined,
-  postsPerPage: 4,
-  postsView: 'list' as ViewOption,
-  projectsPerPage: 3,
-  projectsView: 'list' as ViewOption,
   scrollProgress: false,
   scrollToTop: true,
-  tagIcons: {},
   expressiveCodeThemes: [
     'vitesse-light',
     'vitesse-black'

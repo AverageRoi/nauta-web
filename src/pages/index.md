@@ -6,5 +6,7 @@ logo: true
 ---
 
 Nauta, navigate your Minecraft world.\
-Store all of your coordinates for free! Read our [Terms of Service](/tos/) and make sure to also check out our [Privacy Policy](/privacy_policy/).\
-Read more in the [about](/about/) section.
+Nauta is a free Discord bot for Minecraft servers that stores, finds, and manages coordinates. Explore the [features](/features/) or read more [about Nauta](/about/).\
+Read our [Terms of Service](/tos/) and [Privacy Policy](/privacy-policy/).\
+
+[Add to your server now!](https://discord.com/oauth2/authorize?client_id=1515786853356277820&permissions=51200&integration_type=0&scope=bot)

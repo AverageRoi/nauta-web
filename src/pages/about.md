@@ -6,16 +6,18 @@ activeHeaderLink: About
 
 # About
 
-Nauta is a free Discord bot for Minecraft servers. With Nauta, you can store all of your coordinates, fetch them, see the nearest ones to you, and much more!
+Nauta is a free Discord bot for Minecraft servers. It helps communities save important coordinates, find them later, and keep each server's locations organized in one shared place.
 
-We use [Prisma](https://www.prisma.io/) to store coordinates as well as discord.js to make the bot work!
+The goal is simple: when someone asks where the portal, farm, base, or meeting point is, Nauta should make the answer easy to find.
 
 ## The creators
 
-This bot is a leisure project created by [Average](https://discord.com/users/1102884420207255653) and [Pipo](https://discord.com/users/690905701001986118) who after creating a Minecraft server ran across the problem of having no efficient or clean way to find in-game coordinates. We decided to make it so that anyone can have a better experience in their Discord Minecraft server.
+Nauta is a leisure project created by [Average](https://discord.com/users/1102884420207255653) and [Pipo](https://discord.com/users/690905701001986118). After running a Minecraft server ourselves, we kept running into the same problem: coordinates were scattered across chats, screenshots, pins, and people's memory.
+
+We built Nauta so any Minecraft Discord server can keep useful locations accessible without turning the server into a spreadsheet.
 
 ## The future
 
-This is a simple bot, but we might add more features in the future. We would like to remind that we are doing out of this for the love of the game, so don't expect us to make any complex additions in the near future. On the other hand, if you would like to encourage or support us as we improve this project, feel free to reach any of us!
+Nauta will stay focused on being useful, lightweight, and free. We may add more commands and quality-of-life features over time, but the core promise is to keep coordinate management clear and simple.
 
-Finally, this bot will forever stay free and have a user-first approach. However, if you have any inquires, we are open to hear them. Have a great day!
+If you have questions, ideas, or issues, you can contact Average or Pipo through the Discord profiles linked above.

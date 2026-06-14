@@ -1,32 +1,21 @@
 import { defineThemeConfig } from './types'
 
 export default defineThemeConfig({
-  site: 'https://nordlys.fjelloverflow.dev',
+  site: 'https://nautabot.netlify.app/',
   title: 'Nauta',
   description: 'The web for the Nauta Discord bot',
   author: 'Average & Pipo',
   navbarItems: [
-    { label: 'Terms of Service', href: '/tos/' },
-    { label: 'Privacy Policy', href: '/privacy_policy/' },
+    { label: 'Features', href: '/features/' },
     { label: 'About', href: '/about/' },
-    {
-      label: 'Other pages',
-      children: [
-        { label: 'Photos', href: '/photos/' },
-        { label: 'Tools', href: '/tools/' }
-      ]
-    },
+    { label: 'Terms of Service', href: '/tos/' },
+    { label: 'Privacy Policy', href: '/privacy-policy/' }
   ],
   footerItems: [
     {
       icon: 'tabler--brand-github',
       href: 'https://github.com/AverageRoi',
       label: 'Github'
-    },
-    {
-      icon: 'tabler--rss',
-      href: '/feed.xml',
-      label: 'RSS feed'
     }
   ],
 
@@ -36,16 +25,7 @@ export default defineThemeConfig({
   modeToggle: true,
   colorScheme: 'scheme-mono',
   openGraphImage: undefined,
-  postsPerPage: 5,
-  postsView: 'grid',
-  projectsPerPage: 3,
-  projectsView: 'list',
   scrollProgress: false,
   scrollToTop: true,
-  tagIcons: {
-    tailwindcss: 'tabler--brand-tailwind',
-    astro: 'tabler--brand-astro',
-    documentation: 'tabler--book'
-  },
   expressiveCodeThemes: ['vitesse-light', 'vitesse-black']
 })

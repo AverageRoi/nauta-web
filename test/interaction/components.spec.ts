@@ -1,44 +1,12 @@
-import test, { expect, type Locator } from '@playwright/test'
+import test, { expect } from '@playwright/test'
 
 test.describe('interaction - components', () => {
   let isMobile = false
 
   test.beforeEach(async ({ page, viewport }) => {
-    await page.goto('/posts')
+    await page.goto('/')
 
     isMobile = (viewport?.width ?? 0) < 640
-  })
-
-  test('dropdown', async ({ page }) => {
-    let dropdown: Locator
-
-    if (isMobile) {
-      await page.locator('mobile-nav-toggle button').click()
-      dropdown = page.locator('#mobile-nav dropdown-parent').first()
-    } else {
-      dropdown = page.locator('dropdown-parent').first()
-    }
-    const button = dropdown.locator('button')
-    const menu = dropdown.locator('[role="menu"]')
-
-    await expect(menu).toBeHidden()
-    await expect(button).toHaveAttribute('aria-expanded', 'false')
-
-    await button.click()
-    await expect(menu).toBeVisible()
-    await expect(button).toHaveAttribute('aria-expanded', 'true')
-    await expect(menu.locator('a[href="/tools/"]')).toHaveText('Tools')
-
-    await button.click()
-
-    await expect(menu).toBeHidden()
-    await expect(button).toHaveAttribute('aria-expanded', 'false')
-
-    await button.click()
-    await page.locator('main').click({ position: { x: 10, y: 10 } })
-
-    await expect(menu).toBeHidden()
-    await expect(button).toHaveAttribute('aria-expanded', 'false')
   })
 
   test('mode toggle', async ({ page }) => {
@@ -58,5 +26,16 @@ test.describe('interaction - components', () => {
 
     await expect(html).toHaveAttribute('data-mode', initialMode!)
     await expect(button).toHaveAttribute('aria-label', initialMode!)
+  })
+
+  test('mobile nav', async ({ page }) => {
+    test.skip(!isMobile, 'mobile only')
+
+    const nav = page.locator('#mobile-nav')
+
+    await expect(nav).not.toBeVisible()
+    await page.locator('mobile-nav-toggle button').click()
+    await expect(nav).toBeVisible()
+    await expect(nav.locator('a[href="/features/"]')).toHaveText('Features')
   })
 })
