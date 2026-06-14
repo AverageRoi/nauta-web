@@ -2,9 +2,9 @@ import { defineThemeConfig } from './types'
 
 export default defineThemeConfig({
   site: 'https://nordlys.fjelloverflow.dev',
-  title: 'Nordlys',
-  description: 'A minimal Astro blog theme',
-  author: 'FjellOverflow',
+  title: 'Coords',
+  description: 'The web for the Coords Discord bot',
+  author: 'Lireo & Pipo',
   navbarItems: [
     { label: 'Blog', href: '/posts/' },
     { label: 'Projects', href: '/projects/' },
@@ -38,7 +38,7 @@ export default defineThemeConfig({
   colorScheme: 'scheme-mono',
   openGraphImage: undefined,
   postsPerPage: 5,
-  postsView: 'list',
+  postsView: 'grid',
   projectsPerPage: 3,
   projectsView: 'list',
   scrollProgress: false,
