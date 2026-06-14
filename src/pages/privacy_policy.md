@@ -14,7 +14,7 @@ We collect the following Discord-related data:
 
 > User: id and username.
 >
-Do we?
+For Discord interaction and database purposes
 > Guild: id
 >
 We use it to distinguish servers so each one can have their own stored coordinates.
