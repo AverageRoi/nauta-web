@@ -1,6 +1,6 @@
 ---
 title: Nauta Bot
-url: https://github.com/FjellOverflow/nordlys
+url: https://github.com/AverageRoi
 startDate: 2024-09-30
 tags:
   - astro
