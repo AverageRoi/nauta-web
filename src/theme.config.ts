@@ -16,7 +16,8 @@ export default defineThemeConfig({
         { label: 'Tools', href: '/tools/' }
       ]
     },
-    { label: 'About', href: '/about/' }
+    { label: 'About', href: '/about/' },
+    { label: 'Privacy Policy', href: '/privacy_policy/' }
   ],
   footerItems: [
     {
