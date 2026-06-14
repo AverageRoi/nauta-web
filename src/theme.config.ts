@@ -8,7 +8,9 @@ export default defineThemeConfig({
   navbarItems: [
     { label: 'Blog', href: '/posts/' },
     { label: 'Projects', href: '/projects/' },
-    { label: 'Tags', href: '/tags/' },
+    { label: 'Terms of Service', href: '/tos/' },
+    { label: 'Privacy Policy', href: '/privacy_policy/' },
+    { label: 'About', href: '/about/' },
     {
       label: 'Other pages',
       children: [
@@ -16,8 +18,6 @@ export default defineThemeConfig({
         { label: 'Tools', href: '/tools/' }
       ]
     },
-    { label: 'About', href: '/about/' },
-    { label: 'Privacy Policy', href: '/privacy_policy/' }
   ],
   footerItems: [
     {
