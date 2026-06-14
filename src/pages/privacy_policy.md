@@ -12,14 +12,11 @@ Welcome to Nauta. Nauta is a Discord bot that provides several features such as 
 
 We collect the following Discord-related data:
 
-> User: id and username.
->
+> User: id and username./
 Do we?
-> Guild: id
->
+> Guild: id/
 We use it to distinguish servers so each one can have their own stored coordinates.
-> Commands: Inputs
->
+> Commands: Inputs/
 We collect the data you submit when using one of our slash commands so we can store the necessary fields such as the coordinates, aliases, and dimensions.
 
 ## Use of information
