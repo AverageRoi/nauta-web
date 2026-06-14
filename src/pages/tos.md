@@ -6,7 +6,7 @@ activeHeaderLink: Terms of Service
 
 # Terms of Service
 
-Last updated and effective: June 14, 2026
+Last updated and effective: June 15, 2026
 
 Welcome to Nauta. These Terms of Service ("Terms") explain the rules for using Nauta, a Discord bot made for Minecraft communities to save, organize, fetch, and calculate server coordinates.
 
