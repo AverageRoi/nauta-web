@@ -45,7 +45,7 @@ Nauta operates inside Discord, so data you send through Discord may also be proc
 
 Authorized server members may delete coordinate data directly through Nauta commands where available.
 
-If Nauta is removed from a server, that server's stored data will be deleted after 5 days unless we are required to keep it longer for legal, security, or abuse prevention reasons.
+If Nauta is removed from a server, that server's stored data will be deleted after 24 hours unless we are required to keep it longer for legal, security, or abuse prevention reasons.
 
 If you cannot delete data yourself, or if you have questions about deletion, contact the developers through the Discord profiles linked on the [About page](/about/).
 
