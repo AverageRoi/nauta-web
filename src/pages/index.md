@@ -6,6 +6,6 @@ logo: true
 ---
 
 Nauta, navigate your Minecraft world.\
-Store all of your coordinates for free! Read our [blog](/posts/), it features a [projects](/projects/) portfolio,
-a [photo gallery](/photos/), and a [skills & tools](/tools) section!\
+Store all of your coordinates for free! Read our [blog](/posts/). Make sure to also check out our [privacy policy](/privacy_policy/),
+a [photo gallery](/photos/)!\
 Read more in the [about](/about/) section.
