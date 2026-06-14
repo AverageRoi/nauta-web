@@ -1,5 +1,4 @@
 ---
-import { commands } from '@/data/commands'
 import PageLayout from '@/layouts/PageLayout.astro'
 
 const frontmatter = {
@@ -7,6 +6,33 @@ const frontmatter = {
   description: 'Nauta command documentation for Minecraft Discord servers.',
   activeHeaderLink: 'Features'
 }
+
+const commands = [
+  {
+    href: '/features/near-me/',
+    label: '/near-me',
+    icon: 'tabler--radar',
+    summary: 'Find the saved coordinates closest to a position.'
+  },
+  {
+    href: '/features/register/',
+    label: '/register',
+    icon: 'tabler--map-pin-plus',
+    summary: 'Save a new coordinate so the server can find it later.'
+  },
+  {
+    href: '/features/delete/',
+    label: '/delete',
+    icon: 'tabler--trash',
+    summary: 'Remove saved coordinate data when it is no longer needed.'
+  },
+  {
+    href: '/features/list/',
+    label: '/list',
+    icon: 'tabler--list-search',
+    summary: 'Browse the coordinates saved for a Discord server.'
+  }
+]
 ---
 
 <PageLayout {frontmatter}>
@@ -26,7 +52,7 @@ const frontmatter = {
     {
       commands.map((command) => (
         <a
-          href={`/features/${command.slug}/`}
+          href={command.href}
           class="border-accent/25 hover:border-accent group rounded-md border p-5 no-underline transition"
         >
           <div class="mb-4 flex items-center justify-between gap-4">
