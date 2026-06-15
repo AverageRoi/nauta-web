@@ -21,12 +21,9 @@ Save a new coordinate so the server can find it later. You can use this for base
 
 ## Fields
 
-- Alias: short name used to find the coordinate later
-- X: X coordinate
-- Y: Y coordinate
-- Z: Z coordinate
-- Dimension: world dimension, such as Overworld, Nether, or End
-- Description: optional extra information about the location
+- Coordinates: The coordinates of the location you want to save (X, Z or X, Y, Z)
+- Alias: Associated name used to find the coordinates later
+- Dimension: Dimension of the coordinates (Overworld, Nether, or End)
 
 ## Example
 
@@ -37,9 +34,9 @@ Save a new coordinate so the server can find it later. You can use this for base
     <div>
       <div>
         <span class="font-semibold text-white">Pipo</span>
-        <span class="ml-1 text-xs text-[#949ba4]">Today at 18:45</span>
+        <span class="ml-1 text-xs text-[#949ba4]">18:45</span>
       </div>
-      <div class="mt-1 rounded-md bg-[#2b2d31] px-3 py-2">/register alias: iron-farm x: 420 y: 72 z: -128 dimension: Overworld</div>
+      <div class="mt-1 rounded-md bg-[#2b2d31] px-3 py-2">/register coordinates: 1230, 82, 863 dimension: Overworld alias: Iron Farm</div>
     </div>
   </div>
 
@@ -53,9 +50,9 @@ Save a new coordinate so the server can find it later. You can use this for base
       <div>
         <span class="font-semibold text-white">Nauta</span>
         <span class="ml-1 rounded bg-[#5865f2] px-1.5 py-0.5 text-[10px] font-bold leading-none text-white">APP</span>
-        <span class="ml-1 text-xs text-[#949ba4]">Today at 18:45</span>
+        <span class="ml-1 text-xs text-[#949ba4]">18:45</span>
       </div>
-      <div class="mt-1 text-[#dbdee1]">Your coordinate has been registered!</div>
+      <div class="mt-1 text-[#dbdee1]">Your coordinates have been registered!</div>
       <div class="mt-2 flex items-center gap-2 text-xs text-[#949ba4]">
         <span class="flex h-4 w-4 items-center justify-center rounded-full border border-[#949ba4] text-[10px] font-semibold leading-none">i</span>
         <span>Only you can see this</span>

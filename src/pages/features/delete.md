@@ -21,7 +21,7 @@ Remove a saved coordinate data from your server's stored data. You can use this 
 
 ## Fields
 
-- Alias: associated name (alias) assigned to the saved coordinate you want to delete
+- Alias: Associated name assigned to the saved coordinate you want to delete
 
 ## Example
 
@@ -52,7 +52,7 @@ Remove a saved coordinate data from your server's stored data. You can use this 
       <div>
         <span class="font-semibold text-white">Nauta</span>
         <span class="ml-1 rounded bg-[#5865f2] px-1.5 py-0.5 text-[10px] font-bold leading-none text-white">APP</span>
-        <span class="ml-1 text-xs text-[#949ba4]">Today at 18:48</span>
+        <span class="ml-1 text-xs text-[#949ba4]">18:48</span>
       </div>
       <div class="mt-1 text-[#dbdee1]">
         "Nether portal" deleted <span class="text-[10px] text-[#949ba4]">(edited)</span>

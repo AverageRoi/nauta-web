@@ -11,7 +11,7 @@ activeHeaderLink: Features
 
 ## What It Does
 
-Find the saved coordinates closest to a position. You can use this when you are somewhere in your Minecraft world and want to know which saved location is nearby. The locations can include other dimensions and you can personalize the block distance
+Find the saved coordinates closest to a position. You can use this when you are somewhere in your Minecraft world and want to know which saved location is nearby. The locations can include other dimensions and you can personalize the block distance.
 
 ## Syntax
 
@@ -21,7 +21,7 @@ Find the saved coordinates closest to a position. You can use this when you are 
 
 ## Fields
 
-- Coordinates: your current position in coordinates (X, Z or X, Y, Z)
+- Coordinates: Your current position in coordinates (X, Z or X, Y, Z)
 - Dimension: Dimension you are currently in
 - Target: (Optional) Any other dimension you want to include in the calculation
 - Distance: (Optional) Block range to search coordinates from (500 by default)
@@ -39,7 +39,7 @@ Find the saved coordinates closest to a position. You can use this when you are 
     <div>
       <div>
         <span class="font-semibold text-white">Melissa</span>
-        <span class="ml-1 text-xs text-[#949ba4]">9:31</span>
+        <span class="ml-1 text-xs text-[#949ba4]">9:21</span>
       </div>
       <div class="mt-1 rounded-md bg-[#2b2d31] px-3 py-2">/near-me coordinates: 120, 64, -340 dimension: Overworld</div>
     </div>
@@ -55,7 +55,7 @@ Find the saved coordinates closest to a position. You can use this when you are 
       <div>
         <span class="font-semibold text-white">Nauta</span>
         <span class="ml-1 rounded bg-[#5865f2] px-1.5 py-0.5 text-[10px] font-bold leading-none text-white">APP</span>
-        <span class="ml-1 text-xs text-[#949ba4]">13:21</span>
+        <span class="ml-1 text-xs text-[#949ba4]">9:21</span>
       </div>
       <div class="mt-2 rounded-md border border-l-4 border-[#3f4147] border-l-[#57f287] bg-[#2b2d31] p-5 shadow-sm">
         <div class="text-xl font-bold text-white">Nearby Coordinates</div>
@@ -64,12 +64,12 @@ Find the saved coordinates closest to a position. You can use this when you are 
         </div>
         <div class="mt-5">
           <div class="text-lg font-bold text-white">Overworld</div>
-          <div class="mt-2 text-lg font-bold text-white">Test1</div>
+          <div class="mt-2 text-lg font-bold text-white">John's House</div>
           <div class="mt-1 inline-block rounded-md border border-[#4e5058] bg-[#2b2d31] px-2 py-1 font-mono text-lg leading-none text-white">
             30, ?, 20
           </div>
         </div>
-        <div class="mt-5 text-base font-semibold text-white">hoy a las 13:21</div>
+        <div class="mt-5 text-base font-semibold text-white">today at 9:21</div>
       </div>
     </div>
   </div>

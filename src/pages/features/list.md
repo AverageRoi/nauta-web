@@ -11,7 +11,7 @@ activeHeaderLink: Features
 
 ## What It Does
 
-Browse the coordinates saved for a Discord server. You can use this to quickly review stored locations without remembering each alias.
+Browse all of your saved coordinates in the server. You can use this to quickly review stored locations without remembering each alias.
 
 ## Syntax
 
@@ -21,9 +21,7 @@ Browse the coordinates saved for a Discord server. You can use this to quickly r
 
 ## Fields
 
-- Dimension: optional dimension filter
-- Page: optional page number if the server has many saved coordinates
-- Search: optional text filter for aliases or names
+No fields
 
 ## Example
 
@@ -34,7 +32,7 @@ Browse the coordinates saved for a Discord server. You can use this to quickly r
     <div>
       <div>
         <span class="font-semibold text-white">Pipo</span>
-        <span class="ml-1 text-xs text-[#949ba4]">Today at 18:51</span>
+        <span class="ml-1 text-xs text-[#949ba4]">0:55</span>
       </div>
       <div class="mt-1 rounded-md bg-[#2b2d31] px-3 py-2">/list dimension: Overworld</div>
     </div>
@@ -66,27 +64,27 @@ Browse the coordinates saved for a Discord server. You can use this to quickly r
         </div>
         <div class="mt-5 grid gap-x-4 gap-y-4 sm:grid-cols-2 md:grid-cols-3">
           <div class="min-w-0">
-            <div class="break-words text-lg font-bold text-white">PruebaCercaMedio2</div>
-            <div class="mt-1 inline-block max-w-full rounded-md border border-[#4e5058] bg-[#2b2d31] px-2 py-1 font-mono text-base leading-none text-white">123, ?, 240</div>
+            <div class="break-words text-lg font-bold text-white">Ceremonial Monument</div>
+            <div class="mt-1 inline-block max-w-full rounded-md border border-[#4e5058] bg-[#2b2d31] px-2 py-1 font-mono text-base leading-none text-white">750, ?, 240</div>
           </div>
           <div class="min-w-0">
-            <div class="break-words text-lg font-bold text-white">PruebaLejos</div>
-            <div class="mt-1 inline-block max-w-full rounded-md border border-[#4e5058] bg-[#2b2d31] px-2 py-1 font-mono text-base leading-none text-white">10000, 50, 10000</div>
+            <div class="break-words text-lg font-bold text-white">Lighthouse</div>
+            <div class="mt-1 inline-block max-w-full rounded-md border border-[#4e5058] bg-[#2b2d31] px-2 py-1 font-mono text-base leading-none text-white">10000, 50, -10000</div>
           </div>
           <div class="min-w-0">
-            <div class="break-words text-lg font-bold text-white">PruebaconNether</div>
-            <div class="mt-1 inline-block max-w-full rounded-md border border-[#4e5058] bg-[#2b2d31] px-2 py-1 font-mono text-base leading-none text-white">1000, ?, 1000</div>
+            <div class="break-words text-lg font-bold text-white">Mineshaft near Melissa's village</div>
+            <div class="mt-1 inline-block max-w-full rounded-md border border-[#4e5058] bg-[#2b2d31] px-2 py-1 font-mono text-base leading-none text-white">1200, ?, 900</div>
           </div>
           <div class="min-w-0">
-            <div class="break-words text-lg font-bold text-white">PruebaconNether</div>
-            <div class="mt-1 inline-block max-w-full rounded-md border border-[#4e5058] bg-[#2b2d31] px-2 py-1 font-mono text-base leading-none text-white">1000, ?, 1000</div>
+            <div class="break-words text-lg font-bold text-white">Nether portal in skulk biome</div>
+            <div class="mt-1 inline-block max-w-full rounded-md border border-[#4e5058] bg-[#2b2d31] px-2 py-1 font-mono text-base leading-none text-white">3890, 10, 313</div>
           </div>
           <div class="min-w-0">
-            <div class="break-words text-lg font-bold text-white">Test1</div>
-            <div class="mt-1 inline-block max-w-full rounded-md border border-[#4e5058] bg-[#2b2d31] px-2 py-1 font-mono text-base leading-none text-white">30, ?, 20</div>
+            <div class="break-words text-lg font-bold text-white">Nearest village to spawn</div>
+            <div class="mt-1 inline-block max-w-full rounded-md border border-[#4e5058] bg-[#2b2d31] px-2 py-1 font-mono text-base leading-none text-white">0, ?, 403</div>
           </div>
         </div>
-        <div class="mt-5 text-base font-semibold text-white">5 coordinates registered &bull; hoy a las 0:55</div>
+        <div class="mt-5 text-base font-semibold text-white">5 coordinates registered &bull; today at 0:55</div>
       </div>
       <div class="mt-2 flex flex-wrap gap-3">
         <button type="button" class="rounded-md bg-[#2f6f55] px-5 py-3 text-base font-bold text-[#dbdee1]">Overworld</button>
