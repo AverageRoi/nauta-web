@@ -72,7 +72,7 @@ No fields
             <div class="mt-1 inline-block max-w-full rounded-md border border-[#4e5058] bg-[#2b2d31] px-2 py-1 font-mono text-base leading-none text-white">10000, 50, -10000</div>
           </div>
           <div class="min-w-0">
-            <div class="break-words text-lg font-bold text-white">Mineshaft near Melissa's village</div>
+            <div class="break-words text-lg font-bold text-white">Gigantic Mineshaft</div>
             <div class="mt-1 inline-block max-w-full rounded-md border border-[#4e5058] bg-[#2b2d31] px-2 py-1 font-mono text-base leading-none text-white">1200, ?, 900</div>
           </div>
           <div class="min-w-0">
