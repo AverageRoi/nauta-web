@@ -52,7 +52,7 @@ Save a new coordinate so the server can find it later. You can use this for base
     <div class="min-w-0">
       <div>
         <span class="font-semibold text-white">Nauta</span>
-        <span class="ml-1 rounded bg-[#5865f2] px-1 text-[10px] font-semibold text-white">BOT</span>
+        <span class="ml-1 rounded bg-[#5865f2] px-1.5 py-0.5 text-[10px] font-bold leading-none text-white">APP</span>
         <span class="ml-1 text-xs text-[#949ba4]">Today at 18:45</span>
       </div>
       <div class="mt-2 rounded-md border-l-4 border-[#57f287] bg-[#2b2d31] p-3">
@@ -70,5 +70,19 @@ Save a new coordinate so the server can find it later. You can use this for base
 
 ## Previous / Next
 
-[Back to /near-me](/features/near-me/)  
-[Continue to /delete](/features/delete/)
+<nav class="not-prose mt-6 grid gap-3 sm:grid-cols-2" aria-label="Feature navigation">
+  <a
+    href="/features/near-me/"
+    class="border-accent/25 hover:border-accent rounded-md border p-4 no-underline transition"
+  >
+    <span class="text-accent block text-xs font-semibold uppercase">Previous</span>
+    <span class="block text-base font-semibold">/near-me</span>
+  </a>
+  <a
+    href="/features/delete/"
+    class="border-accent/25 hover:border-accent rounded-md border p-4 text-right no-underline transition"
+  >
+    <span class="text-accent block text-xs font-semibold uppercase">Next</span>
+    <span class="block text-base font-semibold">/delete</span>
+  </a>
+</nav>
