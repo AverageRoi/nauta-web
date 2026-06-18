@@ -103,7 +103,7 @@ We may suspend or terminate access to Nauta for any user or server at any time i
 - We need to protect Nauta, its users, its developers, or its infrastructure.
 - We stop operating Nauta or a specific feature.
 
-Termination may result in loss or deletion of stored data.
+Termination may result in loss or deletion of stored data. By terminating your access, we may in any way restrict, block, or suspend any feature of our service to the specific user or group.
 
 ## 11. Disclaimers
 
